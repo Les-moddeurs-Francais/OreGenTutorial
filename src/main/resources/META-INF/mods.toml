@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[34,)"
+license="All rights reserved"
+[[mods]]
+
+modId="oregentuto"
+version="${file.jarVersion}"
+displayName="Example Mod"
+authors="Mysterious_Dev"
+description='''
+Mod de test pour la generation de minerai en 1.16.3
+'''
+
+[[dependencies.examplemod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[34,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3]"
+    ordering="NONE"
+    side="BOTH"
