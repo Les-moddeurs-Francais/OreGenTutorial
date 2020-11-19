@@ -9,7 +9,7 @@ import net.minecraft.world.gen.feature.*;
 
 public class ModFeatures {
 
-    public static final ConfiguredFeature<?, ?> DIAMOND_BLOCK = register("diamond_block", Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Blocks.DIAMOND_BLOCK.getDefaultState(), 8)).maxHeight(128)).func_242728_a().repeat(20);
+    public static final ConfiguredFeature<?, ?> DIAMOND_BLOCK = register("ore_coal", Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, Blocks.DIAMOND_BLOCK.getDefaultState(), 17)).range(128).square().func_242731_b(20));
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String id, ConfiguredFeature<FC, ?> feature) {
         return (ConfiguredFeature) Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation(Main.MODID, id), feature);
